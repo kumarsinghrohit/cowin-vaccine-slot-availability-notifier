@@ -1,2 +1,5 @@
 # cowin-vaccine-notifier
-Spring boot project to automate the notification of Cowin vaccine slots availability
+Spring boot project to automate the notification of Cowin vaccine slots availability.
+
+# pre-requisite
+i

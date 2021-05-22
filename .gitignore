@@ -1,8 +1,37 @@
-HELP.md
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+# required for tests
+!image.tar.gz
+*.iso
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sqlite
+*/target/**
 target/
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+.mvn/
+bin/
+.flattened-pom.xml
+pom.xml.versionsBackup
 
 ### STS ###
 .apt_generated
@@ -19,15 +48,16 @@ target/
 *.iml
 *.ipr
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+### Uploaded content ###
+uploaded-content/
+resized-files/
 
-### VS Code ###
-.vscode/
+### Generated CSS Files ###
+*.css
+# Because we want to preserve library css files
+!*.min.css
+# Because this file is not migrated to Sass
+!featured-app-organisation-component.css 
+*.css.map
+
+apps-ui/node_modules/
