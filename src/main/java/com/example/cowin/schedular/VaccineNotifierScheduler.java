@@ -37,7 +37,7 @@ class VaccineNotifierScheduler {
 	}
 
 	// This will hit covin at an interval of 10 minutes
-	@Scheduled(cron = "0 */1 * * * ?", zone = "Asia/Kolkata")
+	@Scheduled(cron = "0 */10 * * * ?", zone = "Asia/Kolkata")
 	void findVaccineSlotsAvailability() throws IOException {
 		LOGGER.info("************* VaccineNotifierScheduler has been started............... *************");
 		List<String> message = new ArrayList<>();
